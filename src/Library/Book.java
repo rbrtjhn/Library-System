@@ -13,7 +13,7 @@ public class Book {
 	public Book() {};
 	
 	public Book(String name, String author, String publisher,
-			String address, int qty, double price, int brwcopies) {
+			, int qty, double price, int brwcopies) {
 		this.name = name;
 		this.author = author;
 		this.publisher = publisher;
