@@ -12,7 +12,7 @@ public class Borrowing {
 	Book book;
 	User user;
 	
-	DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+	DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM-dd-yyyy");
 	
 	public Borrowing(Book book, User user) {
 		start = LocalDate.now();
