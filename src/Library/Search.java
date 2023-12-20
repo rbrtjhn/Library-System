@@ -49,7 +49,6 @@ public class Search implements IOOperation {
 					String outputMessage = "Book Name: " + book.getName() + "\n" +
 							"Author: " + book.getAuthor() + "\n" +
 							"Publisher: " + book.getPublisher() + "\n" +
-							"Address: " + book.getAddress() + "\n" +
 							"Quantity: " + book.getQuantity() + "\n" +
 							"Price: " + book.getPrice() + "\n" +
 							"Borrowed Copies: " + book.getBrwcopies();
