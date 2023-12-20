@@ -175,7 +175,6 @@ public class Database {
 		book.setName(a[0]);
 		book.setAuthor(a[1]);
 		book.setPublisher(a[2]);
-		book.setAddress(a[3]);
 		book.setQuantity(Integer.parseInt(a[4]));
 		book.setPrice(Double.parseDouble(a[5]));
 		book.setBrwcopies(Integer.parseInt(a[6]));
