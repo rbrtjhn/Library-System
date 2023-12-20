@@ -29,7 +29,7 @@ public class PlaceOrder implements IOOperation {
 		panel.setBackground(null);
 		JLabel label = Main.label("Book Name:");
 		JTextField name = Main.textfield();
-		JLabel label2 = Main.label("Qty:");
+		JLabel label2 = Main.label("Quantity:");
 		JTextField qty = Main.textfield();
 		JButton placeorder = Main.button("Place Order");
 		JButton cancel = Main.button("Cancel");
@@ -48,13 +48,13 @@ public class PlaceOrder implements IOOperation {
 					return;
 				}
 				if (qty.getText().toString().matches("")) {
-					JOptionPane.showMessageDialog(new JFrame(), "Qty cannot be empty!");
+					JOptionPane.showMessageDialog(new JFrame(), "Quantity of Sales cannot be empty!");
 					return;
 				}
 				try {
 					Integer.parseInt(qty.getText().toString());
 				} catch(Exception e1) {
-					JOptionPane.showMessageDialog(new JFrame(), "Qty must be integer!");
+					JOptionPane.showMessageDialog(new JFrame(), "Quantity of Sales must be integer!");
 					return;
 				}
 				Order order = new Order();
