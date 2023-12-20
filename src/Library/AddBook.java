@@ -31,7 +31,6 @@ public class AddBook implements IOOperation {
 		JLabel label1 = Main.label("Book Name:");
 		JLabel label2 = Main.label("Author:");
 		JLabel label3 = Main.label("Publisher:");
-		JLabel label4 = Main.label("Address:");
 		JLabel label5 = Main.label("Quantity:");
 		JLabel label6 = Main.label("Price:");
 		JLabel label7 = Main.label("Borrowing Copies:");
@@ -39,7 +38,6 @@ public class AddBook implements IOOperation {
 		JTextField name = Main.textfield();
 		JTextField author = Main.textfield();
 		JTextField pub = Main.textfield();
-		JTextField bca = Main.textfield();
 		JTextField qty = Main.textfield();
 		JTextField price = Main.textfield();
 		JTextField brwcpis = Main.textfield();
@@ -53,8 +51,6 @@ public class AddBook implements IOOperation {
 		panel.add(author);
 		panel.add(label3);
 		panel.add(pub);
-		panel.add(label4);
-		panel.add(bca);
 		panel.add(label5);
 		panel.add(qty);
 		panel.add(label6);
@@ -78,10 +74,6 @@ public class AddBook implements IOOperation {
 				}
 				if (pub.getText().toString().matches("")) {
 					JOptionPane.showMessageDialog(new JFrame(), "Book Publisher cannot be empty!");
-					return;
-				}
-				if (bca.getText().toString().matches("")) {
-					JOptionPane.showMessageDialog(new JFrame(), "Book Location Address cannot be empty!");
 					return;
 				}
 				if (qty.getText().toString().matches("")) {
@@ -122,7 +114,6 @@ public class AddBook implements IOOperation {
 					book.setName(name.getText().toString());
 					book.setAuthor(author.getText().toString());
 					book.setPublisher(pub.getText().toString());
-					book.setAddress(bca.getText().toString());
 					book.setQuantity(Integer.parseInt(qty.getText().toString()));
 					book.setPrice(Double.parseDouble(price.getText().toString()));
 					book.setBrwcopies(Integer.parseInt(brwcpis.getText().toString()));
