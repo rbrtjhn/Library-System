@@ -5,7 +5,6 @@ public class Book {
 	private String name;		//title
 	private String author;		//author
 	private String publisher;	//publisher
-	private String address;		//Collection location
 	private String status;		//Borrowing Status
 	private int quantity;		//Copies for sale
 	private double price;		//Price
@@ -18,7 +17,6 @@ public class Book {
 		this.name = name;
 		this.author = author;
 		this.publisher = publisher;
-		this.address = address;
 		this.quantity = quantity;
 		this.price = price;
 		this.brwcopies = brwcopies;
@@ -28,7 +26,6 @@ public class Book {
 		String text = "Book Name: " + name+"\n"+
 				"Book Author: " + author+"\n"+
 				"Book Publisher: " + publisher+"\n"+
-				"Book Collection Adress: " + address+"\n"+
 				"Qty: " + String.valueOf(quantity)+"\n"+
 				"Price: " + String.valueOf(price)+"\n"+
 				"Borrowing Copies: " + String.valueOf(brwcopies);
@@ -57,14 +54,6 @@ public class Book {
 
 	public void setPublisher(String publisher) {
 		this.publisher = publisher;
-	}
-
-	public String getAddress() {
-		return address;
-	}
-
-	public void setAddress(String address) {
-		this.address = address;
 	}
 
 	public String getStatus() {
@@ -100,7 +89,7 @@ public class Book {
 	}
 	
 	public String toString2() {
-		String text = name+"<N/>"+author+"<N/>"+publisher+"<N/>"+address+"<N/>"+String.valueOf(quantity)+
+		String text = name+"<N/>"+author+"<N/>"+publisher+"<N/>"+"<N/>"+String.valueOf(quantity)+
 				"<N/>"+String.valueOf(price)+"<N/>"+String.valueOf(brwcopies);
 		return text;
 	}
